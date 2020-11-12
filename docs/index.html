@@ -5,12 +5,16 @@
     <body>
         
         <p>Test</p>
-        <!--
+        
         <p id="demo"></p>
-
         <script>
-            document.getElementById("demo").innerHTML = 5 + 6;
+		//window.location.search;
+		const params = new URLSearchParams(window.location.search);
+		var x = parseInt( params.get('x') );
+		var y = parseInt( params.get('y') );
+		
+        document.getElementById("demo").innerHTML = "z = " + (x+y);
         </script>
-        -->
+        
     </body>
 </html>
